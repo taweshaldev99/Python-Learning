@@ -158,4 +158,12 @@ if (num % i == 0) :
 print()
 #lambda function
 let = lambda x,y: x+1
-print(let(8,9))
+print(let(8, 9))
+print()
+
+
+#multiple of 5
+def multiple(a=5):
+    for i in range(1,11):
+        print(a*i)
+print(multiple())

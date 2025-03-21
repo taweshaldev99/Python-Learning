@@ -123,6 +123,28 @@ class C(B):
 
 obj7= B()   #call
 obj7.show1()
+obj7.show2()
+
 obj8 = C()
 obj8.show1()
 obj8.show2()
+obj8.show3()
+
+
+#hirearcial
+# gp ->p -> c
+class gp:
+    last_name = "Thakur"
+    def show (self):
+        print("gp")
+
+class p(gp):
+    def shows(self):
+        print("gp->p")
+class c(gp):
+    def showss(self):
+        print("gp -> p -> c")
+obj9 =p()
+print(obj9.last_name)
+obj10 =c()
+print(obj10.last_name)

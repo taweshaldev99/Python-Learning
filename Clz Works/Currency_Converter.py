@@ -11,3 +11,10 @@ def currenty_convert(amount, Current, Next):
     print(totoalamount)
     
 currenty_convert(1000,"NPR","USD")
+try: 
+    amount = int(input("Enter the amount: "))
+    Current = input("Enter the current Currency").upper()
+    Next = input ("Enter the changeable amount: ")
+    currenty_convert(amount, Current, Next)
+except Exception as Error:
+    print(Error)
